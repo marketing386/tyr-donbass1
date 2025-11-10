@@ -1,0 +1,204 @@
+{
+  "recurring": [
+    {
+      "title": "Анапа / Геленджик — любимые курорты",
+      "schedule": "ПН, СР, ПТ (круглый год)",
+      "note": "Выбирайте город и наслаждайтесь отдыхом на Чёрном море",
+      "link": "https://t.me/dondassturrr/4456",
+      "badge": "Рекомендуем"
+    }
+  ],
+  "items": [
+    {
+      "slug": "greenwich-social-park-nov-19",
+      "title": "Социальная среда в Гринвич парке",
+      "location": "GREENWICH Park",
+      "dates": "19.11–20.11",
+      "nights": 1,
+      "price": 7000,
+      "currency": "RUB",
+      "badge": "Выходного дня",
+      "link": "https://t.me/dondassturrr/8443",
+      "image": "/assets/images/tours/greenwich-park.jpg"
+    },
+    {
+      "slug": "adygea-nov-21-27",
+      "title": "Адыгея: горные пейзажи и водопады",
+      "location": "Адыгея",
+      "dates": "21.11–27.11",
+      "nights": 6,
+      "link": "https://t.me/dondassturrr/6780",
+      "image": "/assets/images/tours/adygea.jpg"
+    },
+    {
+      "slug": "women-retreat-nov-28-dec-01",
+      "title": "Женский ретрит-тур",
+      "location": "—",
+      "dates": "28.11–01.12",
+      "nights": 3,
+      "link": "https://t.me/dondassturrr/8591?single"
+    },
+    {
+      "slug": "dom-bai-dec-05-07",
+      "title": "Домбай (тур вых. дня)",
+      "location": "Домбай",
+      "dates": "05.12–07.12",
+      "nights": 2,
+      "link": "https://t.me/dondassturrr/7837"
+    },
+    {
+      "slug": "arkhyz-dec-12-14",
+      "title": "Архыз (зимний)",
+      "location": "Архыз",
+      "dates": "12.12–14.12",
+      "nights": 2,
+      "link": "https://t.me/dondassturrr/7103?single",
+      "image": "/assets/images/tours/arkhyz.jpg"
+    },
+    {
+      "slug": "adygea-dec-19-22",
+      "title": "Адыгея (предновогодний)",
+      "location": "Адыгея",
+      "dates": "19.12–22.12",
+      "nights": 3,
+      "link": "https://t.me/dondassturrr/7844",
+      "image": "/assets/images/tours/adygea.jpg"
+    },
+    {
+      "slug": "greenwich-pre-ny-dec-20-21",
+      "title": "Предновогодний Гринвич Парк",
+      "location": "GREENWICH Park",
+      "dates": "20.12–21.12",
+      "nights": 1,
+      "link": "https://t.me/dondassturrr/8930",
+      "image": "/assets/images/tours/greenwich-park.jpg"
+    },
+    {
+      "slug": "abkhazia-ny-dec-29",
+      "title": "Встречаем Новый год в Абхазии",
+      "location": "Абхазия",
+      "dates": "29.12",
+      "link": "https://t.me/dondassturrr/8824"
+    },
+    {
+      "slug": "lugansk-tree-jan-02",
+      "title": "Новогодняя ёлка в Луганске + квест Краснодон",
+      "location": "Луганск/Краснодон",
+      "dates": "02.01",
+      "link": "https://t.me/dondassturrr/8363",
+      "image": "/assets/images/tours/lugansk-tree.jpg"
+    },
+    {
+      "slug": "rostov-tree-jan-02",
+      "title": "Новогодняя ёлка в Ростове-на-Дону",
+      "location": "Ростов-на-Дону",
+      "dates": "02.01",
+      "link": "https://t.me/dondassturrr/8371",
+      "image": "/assets/images/tours/rostov-christmas.jpg"
+    },
+    {
+      "slug": "krasnodar-ny-jan-02-04",
+      "title": "Новогодний Краснодар",
+      "location": "Краснодар",
+      "dates": "02.01–04.01",
+      "nights": 2,
+      "link": "https://t.me/dondassturrr/8033",
+      "image": "/assets/images/tours/rostov-christmas.jpg"
+    },
+    {
+      "slug": "greenwich-jan-03-04",
+      "title": "Гринвич-парк (тур вых. дня)",
+      "location": "GREENWICH Park",
+      "dates": "03.01–04.01",
+      "nights": 1,
+      "link": "https://t.me/dondassturrr/8755",
+      "image": "/assets/images/tours/greenwich-park.jpg"
+    },
+    {
+      "slug": "loga-park-jan-05",
+      "title": "Лога Парк — тур вых. дня",
+      "location": "Лога Парк",
+      "dates": "05.01",
+      "link": "https://t.me/dondassturrr/8364",
+      "image": "/assets/images/tours/greenwich-park.jpg"
+    },
+    {
+      "slug": "rostov-christmas-jan-06-07",
+      "title": "Рождество в Ростове-на-Дону",
+      "location": "Ростов-на-Дону",
+      "dates": "06.01–07.01",
+      "nights": 1,
+      "link": "https://t.me/dondassturrr/8627",
+      "image": "/assets/images/tours/rostov-christmas.jpg"
+    },
+    {
+      "slug": "krasnodar-christmas-jan-06-09",
+      "title": "Рождественские выходные в Краснодаре",
+      "location": "Краснодар",
+      "dates": "06.01–09.01",
+      "nights": 3,
+      "image": "/assets/images/tours/rostov-christmas.jpg"
+    },
+    {
+      "slug": "loga-park-christmas-jan-07",
+      "title": "Рождественские гуляния в Лога Парке",
+      "location": "Лога Парк",
+      "dates": "07.01",
+      "link": "https://t.me/dondassturrr/8364",
+      "image": "/assets/images/tours/greenwich-park.jpg"
+    },
+    {
+      "slug": "adygea-jan-08-11",
+      "title": "Адыгея (зимняя)",
+      "location": "Адыгея",
+      "dates": "08.01–11.01",
+      "nights": 3,
+      "link": "https://t.me/dondassturrr/8676",
+      "image": "/assets/images/tours/adygea.jpg"
+    },
+    {
+      "slug": "volgograd-jan-09-11",
+      "title": "Волгоград + новогодняя ёлка",
+      "location": "Волгоград",
+      "dates": "09.01–11.01",
+      "nights": 2,
+      "link": "https://t.me/dondassturrr/8772"
+    },
+    {
+      "slug": "adygea-big-jan-16-22",
+      "title": "Большой тур в Адыгею",
+      "location": "Адыгея",
+      "dates": "16.01–22.01",
+      "nights": 6,
+      "link": "https://t.me/dondassturrr/8762",
+      "image": "/assets/images/tours/adygea.jpg"
+    },
+    {
+      "slug": "greenwich-epiphany-jan-17-20",
+      "title": "Крещение в Гринвич парке",
+      "location": "GREENWICH Park",
+      "dates": "17.01–20.01",
+      "nights": 3,
+      "link": "https://t.me/dondassturrr/8610",
+      "image": "/assets/images/tours/greenwich-park.jpg"
+    }
+  ],
+  "featured": {
+    "slug": "greenwich-weekend",
+    "title": "Тур выходного дня в Гринвич парк (каждые выходные: ноябрь/декабрь)",
+    "price": 7000,
+    "currency": "RUB",
+    "includes": [
+      "Номер в отеле + завтрак",
+      "Посещение термального комплекса (бассейны, джакузи, 5 бань)",
+      "Проезд"
+    ],
+    "description": "Термальный комплекс GREENWICH-PARK — это SPA-отдых с семьёй и друзьями. Горячие бассейны под открытым небом (до 32°C зимой), финская панорамная сауна, русская баня, хаммам, альпийская соляная сауна, Белая Баня и Scandic-сауна с бесплатными пропарками каждый час. По вечерам — Караоке-церемонии в Русской Бане. Термальная зона и SPA-услуги на любой вкус.",
+    "booking_phones": [
+      "+79591686572",
+      "+79591870577",
+      "+79595069445",
+      "+79592345527"
+    ]
+  }
+}
