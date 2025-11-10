@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог туров — Донбасс-Тур</title>
+  <meta name="description" content="Все ближайшие выезды: Адыгея, Домбай, Архыз, Абхазия и другие. Фильтры по месяцам, направлениям и цене.">
+  <link rel="icon" href="/assets/images/logo-donbasstur.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta property="og:title" content="Каталог туров — Донбасс-Тур">
+  <meta property="og:description" content="Все ближайшие выезды: Адыгея, Домбай, Архыз, Абхазия и другие. Фильтры по месяцам, направлениям и цене.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/tours.html">
+  <meta property="og:image" content="/assets/images/logo-donbasstur.png">
+  <link rel="canonical" href="https://example.com/tours.html">
+  <script defer src="/assets/js/main.js"></script>
+</head>
+
+<body data-page>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo-wrap" aria-label="На главную">
+      <img src="/assets/images/logo-donbasstur.png" alt="Логотип Донбасс-Тур" class="logo">
+      <span class="brand">Донбасс-Тур</span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="/tours.html">Туры</a>
+      <a href="/about.html">О нас</a>
+      <a href="/services.html">Услуги</a>
+      <a href="/contacts.html">Контакты</a>
+    </nav>
+    <div class="header-contacts">
+      <a class="tel tel-main" href="tel:+79595069445">+7 959 506-94-45</a>
+      <a class="tg-link" href="#" target="_blank" rel="noopener" id="tgLink" aria-label="Наш Telegram">Telegram</a>
+      <button class="btn btn-cta" data-open-modal>Подобрать тур</button>
+      <button class="kebab" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="catalog">
+  <div class="container">
+    <h1>Каталог туров</h1>
+    <form id="filtersForm" class="filters-grid">
+      <label>Месяц
+        <select name="month" id="monthFilter">
+          <option value="">Любой</option>
+          <option value="11">Ноябрь</option>
+          <option value="12">Декабрь</option>
+          <option value="01">Январь</option>
+        </select>
+      </label>
+      <label>Направление
+        <input name="location" id="locationFilter" placeholder="Адыгея, Домбай, Архыз...">
+      </label>
+      <label>Длительность (ночей)
+        <input name="nights" id="nightsFilter" type="number" min="1" placeholder="например: 2">
+      </label>
+      <label>Цена до, ₽
+        <input name="price" id="priceFilter" type="number" min="0" step="500">
+      </label>
+      <label>Бейдж
+        <input name="badge" id="badgeFilter" placeholder="Горящий, Рекомендуем...">
+      </label>
+      <label>Сортировка
+        <select name="sort" id="sortSelect">
+          <option value="date">По дате выезда</option>
+          <option value="price">По цене</option>
+          <option value="pop">По популярности</option>
+        </select>
+      </label>
+      <button class="btn btn-primary" type="submit">Применить</button>
+      <button class="btn btn-light" id="resetFilters" type="button">Сбросить</button>
+    </form>
+
+    <div id="catalogGrouped"></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong id="brandFooter">Донбасс-Тур</strong>
+      <p id="legalName">ИП Мозговая Наталья Сергеевна, т/а «Донбасс-Тур»</p>
+      <p><a id="registryLink" href="#" target="_blank" rel="noopener">Проверить в реестре</a> <span id="registryNote">— Официально на 21 строке реестра ЛНР</span></p>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <ul id="phonesList" class="phones"></ul>
+      <p><a id="tgFooter" href="#" target="_blank" rel="noopener">Наш Telegram</a></p>
+    </div>
+    <div>
+      <h4>Адреса офисов</h4>
+      <ul id="addressesList"></ul>
+    </div>
+    <div>
+      <h4>Документы</h4>
+      <p><a href="/policy.html">Политика обработки персональных данных</a></p>
+    </div>
+  </div>
+  <div class="container tiny-note">© <span id="yearNow"></span> «Донбасс-Тур». Все права защищены.</div>
+</footer>
+
+<!-- Модал заявки -->
+<div class="modal" id="requestModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close-modal aria-label="Закрыть">×</button>
+    <h3 id="modalTitle">Заявка на подбор тура</h3>
+    <form id="requestForm" class="request-form" novalidate>
+      <div class="grid">
+        <label>Ваше имя
+          <input type="text" name="name" required placeholder="Как к вам обращаться?">
+        </label>
+        <label>Телефон
+          <input type="tel" name="phone" required placeholder="+7 999 999-99-99" inputmode="tel">
+        </label>
+        <label>Направление / тур
+          <input type="text" name="destination" placeholder="Например: Адыгея или Гринвич">
+        </label>
+        <label>Дата поездки
+          <input type="date" name="date">
+        </label>
+        <label>Туристов
+          <input type="number" name="people" min="1" value="2">
+        </label>
+        <label>Комментарий
+          <textarea name="comment" rows="3" placeholder="Пожелания к туру"></textarea>
+        </label>
+        <label class="agree">
+          <input type="checkbox" name="agree" required> Я согласен(а) с <a href="/policy.html" target="_blank">политикой обработки ПДн</a>
+        </label>
+      </div>
+      <button class="btn btn-cta" type="submit">Отправить</button>
+      <p class="form-note">После отправки мы свяжемся с вами по телефону. Также можно бронировать по телефонам менеджеров: <span id="managerPhonesInline"></span></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Донбасс-Тур</title>
+  <meta name="description" content="Адреса офисов и телефоны менеджеров «Донбасс-Тур».">
+  <link rel="icon" href="/assets/images/logo-donbasstur.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta property="og:title" content="Контакты — Донбасс-Тур">
+  <meta property="og:description" content="Адреса офисов и телефоны менеджеров «Донбасс-Тур».">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/contacts.html">
+  <meta property="og:image" content="/assets/images/logo-donbasstur.png">
+  <link rel="canonical" href="https://example.com/contacts.html">
+  <script defer src="/assets/js/main.js"></script>
+</head>
+
+<body data-page>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo-wrap" aria-label="На главную">
+      <img src="/assets/images/logo-donbasstur.png" alt="Логотип Донбасс-Тур" class="logo">
+      <span class="brand">Донбасс-Тур</span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="/tours.html">Туры</a>
+      <a href="/about.html">О нас</a>
+      <a href="/services.html">Услуги</a>
+      <a href="/contacts.html">Контакты</a>
+    </nav>
+    <div class="header-contacts">
+      <a class="tel tel-main" href="tel:+79595069445">+7 959 506-94-45</a>
+      <a class="tg-link" href="#" target="_blank" rel="noopener" id="tgLink" aria-label="Наш Telegram">Telegram</a>
+      <button class="btn btn-cta" data-open-modal>Подобрать тур</button>
+      <button class="kebab" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="container">
+  <h1>Контакты</h1>
+  <div class="contacts-grid">
+    <div>
+      <h2>Наши офисы</h2>
+      <ul id="addressesFull"></ul>
+    </div>
+    <div>
+      <h2>Телефоны менеджеров</h2>
+      <ul id="managersList" class="phones"></ul>
+      <p><a id="tgContacts" class="btn btn-primary" target="_blank" rel="noopener" href="#">Написать в Telegram</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong id="brandFooter">Донбасс-Тур</strong>
+      <p id="legalName">ИП Мозговая Наталья Сергеевна, т/а «Донбасс-Тур»</p>
+      <p><a id="registryLink" href="#" target="_blank" rel="noopener">Проверить в реестре</a> <span id="registryNote">— Официально на 21 строке реестра ЛНР</span></p>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <ul id="phonesList" class="phones"></ul>
+      <p><a id="tgFooter" href="#" target="_blank" rel="noopener">Наш Telegram</a></p>
+    </div>
+    <div>
+      <h4>Адреса офисов</h4>
+      <ul id="addressesList"></ul>
+    </div>
+    <div>
+      <h4>Документы</h4>
+      <p><a href="/policy.html">Политика обработки персональных данных</a></p>
+    </div>
+  </div>
+  <div class="container tiny-note">© <span id="yearNow"></span> «Донбасс-Тур». Все права защищены.</div>
+</footer>
+
+<!-- Модал заявки -->
+<div class="modal" id="requestModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close-modal aria-label="Закрыть">×</button>
+    <h3 id="modalTitle">Заявка на подбор тура</h3>
+    <form id="requestForm" class="request-form" novalidate>
+      <div class="grid">
+        <label>Ваше имя
+          <input type="text" name="name" required placeholder="Как к вам обращаться?">
+        </label>
+        <label>Телефон
+          <input type="tel" name="phone" required placeholder="+7 999 999-99-99" inputmode="tel">
+        </label>
+        <label>Направление / тур
+          <input type="text" name="destination" placeholder="Например: Адыгея или Гринвич">
+        </label>
+        <label>Дата поездки
+          <input type="date" name="date">
+        </label>
+        <label>Туристов
+          <input type="number" name="people" min="1" value="2">
+        </label>
+        <label>Комментарий
+          <textarea name="comment" rows="3" placeholder="Пожелания к туру"></textarea>
+        </label>
+        <label class="agree">
+          <input type="checkbox" name="agree" required> Я согласен(а) с <a href="/policy.html" target="_blank">политикой обработки ПДн</a>
+        </label>
+      </div>
+      <button class="btn btn-cta" type="submit">Отправить</button>
+      <p class="form-note">После отправки мы свяжемся с вами по телефону. Также можно бронировать по телефонам менеджеров: <span id="managerPhonesInline"></span></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
